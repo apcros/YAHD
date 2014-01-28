@@ -279,6 +279,8 @@ table {
   }
   .label {
     border: 1px solid #000;
+    margin-top: 5px;
+    margin-left: 5px;
   }
   .table {
     border-collapse: collapse !important;
@@ -5192,6 +5194,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   vertical-align: baseline;
   background-color: #999999;
   border-radius: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 .badge:empty {
@@ -7115,4 +7119,10 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+.yahd {
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
 }

@@ -10,9 +10,13 @@
 	$fp = fopen('tickets.data','r+');
 	rewind($fp); 
 	$lu = file_get_contents('tickets.data');
-	$new = $add.$lu;
+	$id = "</br>";
+	$count = substr_count($lu, $id);
+	$count = "<span class='badge'># $count</span>";
+	$new = $count.$add.$lu;
 	rewind($fp);
 	fputs($fp,$new);
+
 	fclose($fp);
 ?>
 <META http-EQUIV="Refresh" CONTENT="0; url=index.php">

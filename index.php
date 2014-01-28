@@ -1,13 +1,19 @@
+<?php 
+  $lu = file_get_contents('tickets.data');
+  $id = "</br>";
+  $count = substr_count($lu, $id);
+?>
 <html>
 	<header>
 		<link rel="stylesheet" media="screen" type="text/css" href="css/bootstrap.css">
 		<MEAT charset='UTF-8'>
-		<h1> YAHD 0.1 </h1>
+		<h1> YAHD 0.12 </h1>
 		<h4> Yet Another Help Desk </h4>
+    <span class="label label-primary">There is <?php echo $count ?> tickets</span>
 		<hr>
 	</header>
 	<body>
-		<form class="form-horizontal" role="form" method="post" action="send.php">
+		<form class="form-horizontal yahd" role="form" method="post" action="send.php">
   <div class="form-group">
     <label for="nick" class="col-sm-2 control-label">Nickname</label>
     <div class="col-sm-10">

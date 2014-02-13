@@ -12,7 +12,7 @@ $count = $db->querySingle('SELECT COUNT(*) as count FROM tickets;');
 <html>
 	<header>
 		<link rel="stylesheet" media="screen" type="text/css" href="css/bootstrap.css">
-		<MEAT charset='UTF-8'>
+    <META charset='UTF-8'>
 		<h1> YAHD 0.20 </h1>
 		<h4> Yet Another Help Desk </h4>
     <span class="label label-primary">There is <?php echo $count; ?> tickets</span>

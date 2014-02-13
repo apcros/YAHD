@@ -16,7 +16,7 @@ $count = $db->querySingle('SELECT COUNT(*) as count FROM tickets;');
 	$msg = str_replace($banned, ' ', $msg);
 	$priority = $_POST['priority'];
 	$id = ($count+1);
-	$db->exec("INSERT INTO tickets (id, msg, nick, priority) VALUES ($id, '$msg', '$nick', '$priority');");
+	$db->exec("INSERT INTO tickets (msg, nick, priority) VALUES ('$msg', '$nick', '$priority');");
 	$db->close();
 ?>
 <META http-EQUIV="Refresh" CONTENT="0; url=index.php">

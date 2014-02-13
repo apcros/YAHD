@@ -2683,8 +2683,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
 .glyphicon {
@@ -2697,6 +2697,13 @@ input[type="button"].btn-block {
   font-weight: normal;
   line-height: 1;
   -moz-osx-font-smoothing: grayscale;
+}
+a .glyphicon {
+  color : black;
+}
+
+a .glyphicon:hover {
+  color : #34495e ;
 }
 
 .glyphicon:empty {
@@ -7125,4 +7132,15 @@ td.visible-print {
   margin-right: 10%;
   margin-left: 10%;
   text-align: center;
+}
+
+.closed{
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #e67e22), color-stop(0.25, #e67e22), color-stop(0.25, #d35400), color-stop(0.5, #d35400), color-stop(0.5, #e67e22), color-stop(0.75, #e67e22), color-stop(0.75, #d35400));
+  background-image: -webkit-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
+  background-image: -moz-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
+  background-image: -ms-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
+  background-image: -o-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67e22', endColorstr='#d35400',GradientType=0 ); / IE6-8 */
+  background-image: linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
+  background-size: 30px 30px;
 }

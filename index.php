@@ -34,7 +34,6 @@ $count = $db->querySingle('SELECT COUNT(*) as count FROM tickets;');
   			<option>High</option>
   			<option>Medium</option>
   			<option>Low</option>
-  			<option>Ridiculous</option>
   		</select>
   	</div>
   </div>
@@ -56,9 +55,13 @@ $count = $db->querySingle('SELECT COUNT(*) as count FROM tickets;');
             {
               $query = "SELECT DISTINCT * FROM tickets WHERE (id='$j');";
               $result = $db->query($query)->fetchArray();
+              if (!$result) {
+
+              } else {
               extract($result, EXTR_OVERWRITE, "wddx");
-              echo "<span class='badge'># $id</span>";
-              echo "<div class='alert $priority'> <b>$nick</b> : $msg </br> </div>";
+              echo "<div class='alert $priority'><span class='badge'># $id</span><br>";
+              echo "<b>$nick</b> : $msg </br> <a href='lock.php?id=$id'><span class='glyphicon glyphicon-lock'></span></a><a href='unlock.php?id=$id'><span class='glyphicon glyphicon-ok'></span></a></div><hr>";
+            }
             }
         $db->close();
 		?>

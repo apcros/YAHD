@@ -7135,12 +7135,20 @@ td.visible-print {
 }
 
 .closed{
-  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #e67e22), color-stop(0.25, #e67e22), color-stop(0.25, #d35400), color-stop(0.5, #d35400), color-stop(0.5, #e67e22), color-stop(0.75, #e67e22), color-stop(0.75, #d35400));
-  background-image: -webkit-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
-  background-image: -moz-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
-  background-image: -ms-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
-  background-image: -o-linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67e22', endColorstr='#d35400',GradientType=0 ); / IE6-8 */
-  background-image: linear-gradient(left bottom, #e67e22 0%, #e67e22 25%, #d35400 25%, #d35400 50%, #e67e22 50%, #e67e22 75%, #d35400 75%);
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #bdc3c7), color-stop(0.25, #bdc3c7), color-stop(0.25, #95a5a6), color-stop(0.5, #95a5a6), color-stop(0.5, #bdc3c7), color-stop(0.75, #bdc3c7), color-stop(0.75, #95a5a6));
+  background-image: -webkit-linear-gradient(left bottom, #bdc3c7 0%, #bdc3c7 25%, #95a5a6 25%, #95a5a6 50%, #bdc3c7 50%, #bdc3c7 75%, #95a5a6 75%);
+  background-image: -moz-linear-gradient(left bottom, #bdc3c7 0%, #bdc3c7 25%, #95a5a6 25%, #95a5a6 50%, #bdc3c7 50%, #bdc3c7 75%, #95a5a6 75%);
+  background-image: -ms-linear-gradient(left bottom, #bdc3c7 0%, #bdc3c7 25%, #95a5a6 25%, #95a5a6 50%, #bdc3c7 50%, #bdc3c7 75%, #95a5a6 75%);
+  background-image: -o-linear-gradient(left bottom, #bdc3c7 0%, #bdc3c7 25%, #95a5a6 25%, #95a5a6 50%, #bdc3c7 50%, #bdc3c7 75%, #95a5a6 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdc3c7', endColorstr='#95a5a6',GradientType=0 ); / IE6-8 */
+  background-image: linear-gradient(left bottom, #bdc3c7 0%, #bdc3c7 25%, #95a5a6 25%, #95a5a6 50%, #bdc3c7 50%, #bdc3c7 75%, #95a5a6 75%);
   background-size: 30px 30px;
+  color: black;
+}
+
+.resolved {
+  background-color: #1abc9c;
+}
+.indicT {
+  margin-left: 5px;
 }

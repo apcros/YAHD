@@ -11,7 +11,7 @@ $db = new dbmain();
 
 $idticket = $_GET['id'];
 
-$querycmd = "UPDATE tickets SET priority = 'label-success' WHERE id=$idticket";
+$querycmd = "UPDATE tickets SET priority = 'resolved' WHERE id=$idticket";
 $db->query($querycmd);
 $db->close();
 

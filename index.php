@@ -8,14 +8,24 @@
 }
 $db = new dbmain();
 $count = $db->querySingle('SELECT COUNT(*) as count FROM tickets;');
+$high = $db->querySingle("SELECT COUNT(*) as count1 FROM tickets WHERE (priority='High');");
+$medium = $db->querySingle("SELECT COUNT(*) as count2 FROM tickets WHERE (priority='Medium');");
+$low = $db->querySingle("SELECT COUNT(*) as count3 FROM tickets WHERE (priority='Low');");
+$resolved = $db->querySingle("SELECT COUNT(*) as count4 FROM tickets WHERE (priority='resolved');");
+$locked = $db->querySingle("SELECT COUNT(*) as count5 FROM tickets WHERE (priority='closed');");
 ?>
 <html>
-	<header>
+	<header class='indicT'>
 		<link rel="stylesheet" media="screen" type="text/css" href="css/bootstrap.css">
-    <META charset='UTF-8'>
-		<h1> YAHD 0.20 </h1>
+		<MEAT charset='UTF-8'>
+		<h1> YAHD 0.21 </h1>
 		<h4> Yet Another Help Desk </h4>
-    <span class="label label-primary">There is <?php echo $count; ?> tickets</span>
+    <span class="label label-primary"><?php echo $count; ?> total ticket(s)</span>
+    <span class="label high indicT"><?php echo $high; ?> high priority ticket(s)</span>
+    <span class="label medium indicT"><?php echo $medium; ?> medium priority ticket(s)</span>
+    <span class="label low indicT"><?php echo $low; ?> low priority ticket(s)</span>
+    <span class="label resolved indicT"><?php echo $resolved; ?> resolved ticket(s)</span>
+    <span class="label closed indicT"><?php echo $locked; ?> locked ticket(s)</span>
 		<hr>
 	</header>
 	<body>

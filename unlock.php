@@ -10,9 +10,9 @@ class dbmain extends SQLite3
 $db = new dbmain();
 
 $idticket = $_GET['id'];
-
-$querycmd = "UPDATE tickets SET priority = 'resolved' WHERE id=$idticket";
-$db->query($querycmd);
+$q = $db->prepare('UPDATE tickets SET priority = \'resolved\' WHERE id=:id');
+$q->bindValue(':id', $idticket);
+$q->execute();
 $db->close();
 
 ?>

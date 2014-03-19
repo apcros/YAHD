@@ -69,6 +69,9 @@ $locked = $db->querySingle("SELECT COUNT(*) as count5 FROM tickets WHERE (priori
 
               } else {
               extract($result, EXTR_OVERWRITE, "wddx");
+              $priority = htmlspecialchars($priority);
+              $nick = htmlspecialchars($nick);
+              $msg = htmlspecialchars($msg);
               echo "<div class='alert $priority'><span class='badge'># $id</span><br>";
               echo "<b>$nick</b> : $msg </br> <a href='lock.php?id=$id'><span class='glyphicon glyphicon-lock'></span></a><a href='unlock.php?id=$id'><span class='glyphicon glyphicon-ok'></span></a></div><hr>";
             }

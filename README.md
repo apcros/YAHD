@@ -1,4 +1,4 @@
-YAHD 0.21
+YAHD 0.30
 ====
 
 A really basic PHP help desk
@@ -9,13 +9,16 @@ You can now lock a ticket with the lockpad icon, or mark it as resolved with the
 
 There is a ticket overview at the top of the page.
 
-Following update : Password protection for both lock and resolved. And also a basic admin page to save/purge the database.
+Administration page for deleting, closing or resolving tickets. (The login is not very secure, will optimize later...I pinky swear)
+(Will add a ban ip option later)
+
 
 YES, this help desk is not really a exemple of perfect code, but at least it's simple and -half- working.
 
-	Common problem(s) :
+	You should Read the following text :  
 
-	- The tickets.db is not created by setup.php 
+	- If the tickets.db is not created by setup.php 
 	You may consider using the "chmod" command on YAHD's folder
+	- You need to set a password and a user in the login.php file. (The password need to be writed in md5)
 
 (The UI is obviously made with the twitter bootstrap)

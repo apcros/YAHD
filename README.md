@@ -15,10 +15,10 @@ Administration page for deleting, closing or resolving tickets. (The login is no
 
 YES, this help desk is not really a exemple of perfect code, but at least it's simple and -half- working.
 
-	You should Read the following text :  
+*You should Read the following text :  
 
 	- If the tickets.db is not created by setup.php 
 	You may consider using the "chmod" command on YAHD's folder
-	- You need to set a password and a user in the login.php file. (The password need to be writed in md5)
+	- You need to set a password and a user in the login.php file. (The password need to be wrote in md5)
 
 (The UI is obviously made with the twitter bootstrap)

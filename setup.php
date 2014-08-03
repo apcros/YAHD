@@ -16,7 +16,7 @@ class dbmain extends SQLite3
 	}
 }
 $db = new dbmain();
-$db->exec("CREATE TABLE tickets (id INTEGER PRIMARY KEY, msg VARCHAR(500), nick VARCHAR(45), priority VARCHAR(10));");
+$db->exec("CREATE TABLE tickets (id INTEGER PRIMARY KEY, msg VARCHAR(500), nick VARCHAR(45), priority VARCHAR(10), status VARCHAR(10));");
 $db->close();
 ?>
 </html>

@@ -5,7 +5,7 @@
 	<header class='indicT'>
 		<link rel="stylesheet" media="screen" type="text/css" href="css/bootstrap.css">
 		<META charset='UTF-8'>
-		<h1> YAHD 0.30 </h1>
+		<h1> YAHD 0.32 </h1>
 		<h4> Yet Another Help Desk </h4>
     <?php echo returnStats(); ?>
     <a href="admin.php"><button class="btn btn-info"><span class="glyphicon glyphicon-cog"></span> Admin</button></a>

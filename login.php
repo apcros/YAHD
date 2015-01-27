@@ -1,10 +1,10 @@
 <?php
 
-$user = "";
-$password = ""; //md5 password. 
+$user = "admin";
+$password = "admin"; //
 
 if(isset($_POST['user']) && isset($_POST['pwd'])) {
-	if($user == $_POST['user'] && $password == md5($_POST['pwd'])) {
+	if($user == $_POST['user'] && $password == $_POST['pwd']) {
 		session_start();
 		$_SESSION["logged"] = 1;
 		header('Location: admin.php');
